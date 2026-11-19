@@ -1,5 +1,6 @@
 import React, { useState } from 'react';
 import { apiFetch, setAuthToken } from '../api';
+import Logo from './Logo';
 
 export default function AuthSection({ onAuthSuccess }) {
   const [isRegister, setIsRegister] = useState(false);
@@ -66,8 +67,11 @@ export default function AuthSection({ onAuthSuccess }) {
   return (
     <div style={{ maxWidth: 460, margin: '2rem auto' }}>
       <div className="card">
-        <h2 className="card-title" style={{ textAlign: 'center', display: 'block' }}>
-          {isRegister ? 'Create Account' : 'Sign In to Notes'}
+        <div style={{ display: 'flex', justifyContent: 'center', marginBottom: '1.25rem' }}>
+          <Logo size="large" />
+        </div>
+        <h2 className="card-title" style={{ textAlign: 'center', display: 'block', fontSize: '1.1rem', color: 'var(--text-muted)' }}>
+          {isRegister ? 'Create DigiNote Account' : 'Sign In to DigiNote'}
         </h2>
 
         {error && <div className="alert alert-danger">{error}</div>}

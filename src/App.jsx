@@ -1,5 +1,6 @@
 import React, { useState, useEffect } from 'react';
 import { apiFetch, getAuthToken, setAuthToken } from './api';
+import Logo from './components/Logo';
 import AuthSection from './components/AuthSection';
 import NotesSection from './components/NotesSection';
 import AdminSection from './components/AdminSection';
@@ -51,10 +52,7 @@ export default function App() {
     <div>
       <header>
         <div className="container header-content">
-          <div className="logo-area">
-            <h1>🔒 Secure Note-Taking Application</h1>
-            <span>Mongoose Indexes • MongoDB Aggregations • JWT & RBAC</span>
-          </div>
+          <Logo />
 
           <div className="user-status">
             {user ? (

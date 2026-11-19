@@ -1,6 +1,6 @@
-# Secure Note-Taking Frontend
+# DigiNote — Secure Note-Taking Frontend
 
-A lightweight, responsive React + Vite application for interacting with the Secure Note-Taking REST API.
+A modern, lightweight React + Vite frontend for **DigiNote**, a secure note-taking platform with JWT authentication, role-based access control, and MongoDB aggregations.
 
 ## Features
 - **Auth**: Login & registration with quick 1-click test login buttons
